@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Masters</title>
+
+    <link
+      rel="icon"
+      type="image/jpg"
+      sizes="200 x 166"
+      href="./images/word_puzzle.jpg"
+    />
+
+    <!-- Sweet Alert Pop Up Message for winning and losing -->
+    <!-- SweetAlert Dark Modal  -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css"
+      rel="stylesheet"
+    /> -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Font Awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/animate.css@4/animate.min.css"
+    />
+    <link rel="stylesheet" href="./css/animations.css" />
+    <link rel="stylesheet" href="./css/wordmaster.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+  </head>
+  <body>
+    <!-- <canvas class="confetti hide_confetti" id="canvas"></canvas> -->
+    <header class="navbar">
+      <h1 class="brand">W⭕®d M🅰steRs</h1>
+      <button
+        id="instructions-btn"
+        class="instructions-btn"
+        aria-label="Show Instructions"
+      >
+        <i class="fas fa-question-circle fa-lg"></i>
+      </button>
+      <hr width="auto" class="hr_ruler" size="5" id="hr_ruler" />
+    </header>
+
+    <!-- Instructions Modal -->
+    <div id="instructions-modal" class="instructions-modal">
+      <div class="modal-content">
+        <button class="close-btn" aria-label="Close Instructions">
+          <i class="fa fa-times"></i>
+        </button>
+        <h2>How to Play Wordmaster</h2>
+        <div class="instructions-content">
+          <ul class="no-bullets">
+            <li>
+              You have a 6 × 5 matrix grid, with six different words in total,
+              each containing five letters.
+            </li>
+            <li>
+              Use the Virtual Keyboard to enter your guesses. The '⌦' key acts
+              as enter on mobile devices.
+            </li>
+            <li>Incorrect guesses will overwrite the last game grid space.</li>
+            <li>Use the '⌫' key to delete letters one by one.</li>
+            <li>Click the keyboard icon to access the Virtual Keyboard.</li>
+            <li>
+              When you win, you'll be rewarded with a celebratory confetti
+              display!
+            </li>
+            <li>Click 'Play Again' to start a new game.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="info-bar">
+      <div class="spiral">💢</div>
+    </div>
+
+    <div class="container">
+      <div class="scoreboard">
+        <div class="scoreboard-letter" id="letter-0"></div>
+        <div class="scoreboard-letter" id="letter-1"></div>
+        <div class="scoreboard-letter" id="letter-2"></div>
+        <div class="scoreboard-letter" id="letter-3"></div>
+        <div class="scoreboard-letter" id="letter-4"></div>
+        <div class="scoreboard-letter" id="letter-5"></div>
+        <div class="scoreboard-letter" id="letter-6"></div>
+        <div class="scoreboard-letter" id="letter-7"></div>
+        <div class="scoreboard-letter" id="letter-8"></div>
+        <div class="scoreboard-letter" id="letter-9"></div>
+        <div class="scoreboard-letter" id="letter-10"></div>
+        <div class="scoreboard-letter" id="letter-11"></div>
+        <div class="scoreboard-letter" id="letter-12"></div>
+        <div class="scoreboard-letter" id="letter-13"></div>
+        <div class="scoreboard-letter" id="letter-14"></div>
+        <div class="scoreboard-letter" id="letter-15"></div>
+        <div class="scoreboard-letter" id="letter-16"></div>
+        <div class="scoreboard-letter" id="letter-17"></div>
+        <div class="scoreboard-letter" id="letter-18"></div>
+        <div class="scoreboard-letter" id="letter-19"></div>
+        <div class="scoreboard-letter" id="letter-20"></div>
+        <div class="scoreboard-letter" id="letter-21"></div>
+        <div class="scoreboard-letter" id="letter-22"></div>
+        <div class="scoreboard-letter" id="letter-23"></div>
+        <div class="scoreboard-letter" id="letter-24"></div>
+        <div class="scoreboard-letter" id="letter-25"></div>
+        <div class="scoreboard-letter" id="letter-26"></div>
+        <div class="scoreboard-letter" id="letter-27"></div>
+        <div class="scoreboard-letter" id="letter-28"></div>
+        <div class="scoreboard-letter" id="letter-29"></div>
+      </div>
+    </div>
+
+    <img
+      src="./images/abc_blocks.png"
+      alt="Building Blocks"
+      class="building_blocks"
+      height="140px"
+    />
+
+    <div class="button_container">
+      <button onclick="window.location.reload()" id="play_again" class="btn">
+        Play 🅰ga⚡n
+        <!-- Pl🅰y 🅰ga⚡n -->
+      </button>
+    </div>
+
+    <!-- <button onclick="startConfetti();" class="btn btn-danger">Start</button>
+    <button onclick="stopConfetti();" class="btn btn-info">Stop</button>
+    <button onclick="toggleConfetti();" class="btn btn-warning">Toggle</button> -->
+    <!-- <canvas class="confetti" id="canvas"></canvas> -->
+
+    <canvas id="gameCanvas" class="water_balloon"></canvas>
+
+    <!-- Virtual Keyboard -->
+    <div id="virtualKeyboard" class="virtual-keyboard"></div>
+    <button id="keyboardToggle" class="keyboard-toggle">⌨️</button>
+
+    <script src="./scripts/wordmaster.js"></script>
+    <script src="./scripts/mobileinput.js"></script>
+    <!-- Game win screen -->
+    <script src="./scripts/confetti.js"></script>
+    <!-- Game lose screen -->
+    <script src="./scripts/threedballoon.js"></script>
+    <script src="./scripts/instructions.js"></script>
+  </body>
+</html>
+
+<!-- 
+credits:
+Game: from Frontend Masters: 
+Brian Holt
+
+Codeium Windsurf: Mobile Friendly Virtual Keyboard, Instruction Modal, Game over Screen with balloon and audio sound effects, and all around help.
+
+Animal alphabet background:
+https://i.pinimg.com/originals/c6/bf/8c/c6bf8cc359e28ccdf2b29b2419877fa5.png
+
+
+Sounds: winning sound-effects
+https://pixabay.com/sound-effects/search/congratulations/ floraphonic
+
+Game losing sound: From the movie Hal.
+
+
+Confetti Animation on Game Win Screen
+https://www.cssscript.com/confetti-falling-animation/ 
+-->
