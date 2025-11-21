@@ -31,7 +31,8 @@ Guess it right and… **CONFETTI EXPLOSION + WATER BALLOONS + HAPPY MUSIC!** �
 [Play it now!](https://your-live-url-when-ready.com) *(coming soon or already live!)*
 
 Instructions: ## How to Play
-There is a question mark icon upper left to access the instruction modal.
+There is a question mark icon located on the top upper right portion of the screen to access the instruction modal.
+There is a keyboard icon located on the upper right portion of the screen to access the virtual keyboard.
 
 You have a 6 × 5 matrix grid, with six different words in total, each containing five letters.
 Use the Virtual Keyboard to enter your guesses. The '⌦' key acts as enter on mobile devices.
