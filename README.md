@@ -1,13 +1,11 @@
-# wordmaster
+# Wordmaster
 Brian Holt: Frontend Master Class Project
 Word Master ✨ The Magical 5-Letter Quest! 🧙‍♂️
 ![wordmaster-screenshot](https://github.com/user-attachments/assets/96e01aab-50fb-4ca7-b57b-6d6f5ab015a0)
 
 If there are any mistakes please let me know.
 
-<img width="1669" height="875" alt="wordmaster-screenshot (2)" src="https://github.com/user-attachments/assets/2ada278c-9089-47a0-aaba-c8cd7e71d7c1" />
 # Word Master ✨ The Magical 5-Letter Quest! 🧙‍♂️
-
 
 *(Look — the tiles dance and throw water balloons when you win! 🎈💦)*
 
@@ -33,6 +31,7 @@ Guess it right and… **CONFETTI EXPLOSION + WATER BALLOONS + HAPPY MUSIC!** �
 [Play it now!](https://your-live-url-when-ready.com) *(coming soon or already live!)*
 
 Instructions: ## How to Play
+There is a question mark icon upper left to access the instruction modal.
 
 You have a 6 × 5 matrix grid, with six different words in total, each containing five letters.
 Use the Virtual Keyboard to enter your guesses. The '⌦' key acts as enter on mobile devices.
